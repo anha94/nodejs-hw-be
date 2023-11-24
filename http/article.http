@@ -1,0 +1,23 @@
+# GET All
+GET http://localhost:8080/api/v1/articles HTTP/1.1
+
+###
+
+
+# GET by Id
+GET http://localhost:8080/api/v1/articles/655f0ff2fb53e5ec45327284 HTTP/1.1
+
+###
+
+# Create new Category
+
+POST http://localhost:8080/api/v1/articles HTTP/1.1
+content-type: application/json
+
+{       
+    "title": "Apple released OS 16",
+    "keyword": "apple, os, 16",
+    "description": "To day Apple released OS 16",
+    "content": "In publishing and graphic design, Lorem ipsum is a placeholder text",
+    "date": "2023-11-01"
+}
